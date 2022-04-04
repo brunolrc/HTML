@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+:root
+{
+    --clr: #222327;
+}
+body
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: var(--clr)
+}
+
+.navegador 
+{
+position: relative;
+width: 400px;
+height:70px;
+background: rgb(255, 255, 255) ;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+}
+.navegador ul 
+{
+    display: flex;
+    width: 350px;
+}
+.navegador ul li
+{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.navegador ul li a 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.navegador ul li a .icone
+{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+}
+.navegador ul li:hover a .icone
+{
+    transform: translateY(-50px)
+}
+.navegador ul li a .texto
+{
+    position: absolute;
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.navegador ul li:hover a .texto
+{
+    opacity: 1;
+    transform: translateY(10px);
+}
+.indicator
+{
+    position: absolute;
+    top: -70%;
+    width: 70px;
+    height: 70px;
+    background: #29fd29
+    border-box: 10px
+    border-radius: 132
+
+}
